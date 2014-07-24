@@ -3,7 +3,7 @@ import os
 from os.path import *
 import stat
 import shutil
-from glob import iglob
+from glob import glob
 from zipfile import is_zipfile, ZipFile
 from collections import namedtuple
 
@@ -21,10 +21,10 @@ class Lib:
         return join(self._archive, basename(fn))
 
     def targets(self, mask='*'):
-        return iglob(join(self._target, mask))
+        return sorted(glob(join(self._target, mask)))
 
     def archives(self, mask='*'):
-        return iglob(join(self._archive, mask))
+        return sorted(glob(join(self._archive, mask)))
 
     def link(self, other, mask='*', dryrun=1):
         for fn in self.targets(mask):
@@ -67,5 +67,6 @@ if __name__ == "__main__":
             target = u"_Lib.rus.ec - Официальная/lib.rus.ec")
 
     #f.link(l, "f.*", dryrun=0)
-    f.archive("f.*", dryrun=0)
+    f#.archive("f.*", dryrun=0)
+    l.archive("fb2-*", dryrun=0)
 
