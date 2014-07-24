@@ -11,15 +11,23 @@
   <Version>0.1</Version>
   <Author></Author>
   <Email></Email>
+  <Eol index="-1"/>
   <Sources>
     <Source>__init__.py</Source>
-    <Source>link-f.py</Source>
+    <Source>mylibs/utils/librusec2db.py</Source>
+    <Source>mylibs/utils/rarfile.py</Source>
+    <Source>mylibs/utils/mysql2db/mydump2sqlite.py</Source>
+    <Source>mylibs/utils/mysql2db/test.py</Source>
+    <Source>mylibs/utils/mysql2db/mysql2db.py</Source>
+    <Source>mylibs/utils/link-f.py</Source>
   </Sources>
   <Forms/>
   <Translations/>
   <Resources/>
   <Interfaces/>
-  <Others/>
+  <Others>
+    <Other>.issues</Other>
+  </Others>
   <Vcs>
     <VcsType>None</VcsType>
   </Vcs>
