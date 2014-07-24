@@ -1,0 +1,4 @@
+[submodule "mylibs/utils/mysql2db"]
+	path = mylibs/utils/mysql2db
+	url = git@github.com:termim/mysql2db.git
+	branch = master
